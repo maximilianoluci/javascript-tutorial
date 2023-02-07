@@ -33,4 +33,6 @@ var checkPastLimitSimplified = function (limiter) {
     return item > limiter;
   }.bind(this, limiter);
 };
-//16:02
+
+var arr5 = mapForEach(arr1, checkPastLimitSimplified(2));
+console.log(arr5);
